@@ -1,0 +1,56 @@
+## Ignore Visual Studio temporary files, build results, and other files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Visual Studio Trace Files
+*.e2e
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# NCrunch
+*.ncrunchsolution
+*.ncrunchproject
+
+# NuGet packages
+*.nupkg
+# The packages folder can be ignored if you use Package Restore
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+!**/[Pp]ackages/repositories.config
+
+# Azure build files
+*.azurePubxml
+
+# Visual Studio Code
+.vscode/
+
+# Others
+*.dbmdl
+*.bak
+*.backup
+*.tmp
+*.cache
+*.log
+*.vsidx

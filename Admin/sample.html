@@ -1,0 +1,291 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>404 — Page Not Found</title>
+
+    <!-- Google Font (optional) -->
+    <link rel="stylesheet" href=" https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" />
+
+    <link rel="stylesheet" href="   https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+
+    <!-- Bootstrap 5 CDN -->
+ 
+
+    <!-- Bootstrap Icons (optional for home icon) -->
+  
+    <style>
+
+        /* =========================
+   THEME VARIABLES
+   ========================= */
+        :root {
+            --coral: #ff6b61; /* main coral background */
+            --teal: #1d6b66; /* left/right edge teal */
+            --cream: #fff9d6; /* cream for numbers & inner circle */
+            --dark: #141412; /* near black for ring */
+            --ring-size: min(72vmin, 820px);
+            --inner-size: calc(var(--ring-size) * 0.55);
+            --dot-size: calc(var(--ring-size) * 0.1);
+            --stroke: 6px; /* text stroke thickness */
+            --shadow: 0 20px 40px rgba(0,0,0,.25);
+            --speed-rotate: 28s; /* ring rotation */
+            --speed-float: 6s; /* vertical float of ring */
+            --speed-bounce: 1.8s; /* small dot bounce */
+        }
+
+        /* Global reset & base typography */
+        html, body {
+            height: 100%;
+            background: var(--teal);
+            font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Nav minimal styling matching screenshot (Login / Register aligned left) */
+        .app-navbar {
+            backdrop-filter: saturate(140%) blur(8px);
+            background: rgba(255,255,255,.7);
+            border-bottom: 1px solid rgba(0,0,0,.06);
+        }
+
+            .app-navbar a {
+                text-decoration: none;
+                font-weight: 500;
+                color: #222;
+                margin-right: .75rem;
+            }
+
+                .app-navbar a.active {
+                    border-bottom: 2px solid #0d6efd;
+                }
+
+        /* =========================
+   404 HERO CANVAS
+   ========================= */
+        .error-hero {
+            position: relative;
+            min-height: calc(100vh - 56px); /* subtract navbar height */
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(120vmax 120vmax at 8% 50%, var(--teal) 0%, var(--teal) 36%, transparent 36%) 0 0/100% 100% no-repeat, radial-gradient(120vmax 120vmax at 92% 50%, var(--teal) 0%, var(--teal) 36%, transparent 36%) 0 0/100% 100% no-repeat, var(--coral);
+        }
+
+            /* subtle film-grain overlay for texture */
+            .error-hero::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                pointer-events: none;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+                mix-blend-mode: multiply;
+            }
+
+        /* Container that holds ring, numbers, and center card */
+        .error-canvas {
+            position: relative;
+            width: var(--ring-size);
+            height: var(--ring-size);
+        }
+
+        /* Big “404” numbers left/right with cream fill and dark outline */
+        .digit {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: calc(var(--ring-size) * 0.42);
+            font-weight: 800;
+            line-height: 1;
+            color: var(--cream);
+            -webkit-text-stroke: var(--stroke) #111;
+            text-shadow: 0 6px 0 #111, 0 10px 24px rgba(0,0,0,.35);
+            user-select: none;
+            letter-spacing: .02em;
+        }
+
+            .digit.left {
+                left: -6%;
+            }
+
+            .digit.right {
+                right: -6%;
+            }
+
+        /* Central ring group */
+        .ring {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: var(--ring-size);
+            height: var(--ring-size);
+            border-radius: 50%;
+            background: radial-gradient(circle at 50% 50%, var(--dark) 0 61%, transparent 61% 100%);
+            box-shadow: var(--shadow);
+            animation: slowRotate var(--speed-rotate) linear infinite, floatY var(--speed-float) ease-in-out infinite;
+        }
+
+        /* Cream inner disc */
+        .inner {
+            position: absolute;
+            inset: 0;
+            margin: auto;
+            width: var(--inner-size);
+            height: var(--inner-size);
+            border-radius: 50%;
+            background: var(--cream);
+            box-shadow: inset 0 0 0 12px rgba(20,20,18,.95), 0 10px 24px rgba(0,0,0,.25);
+            display: grid;
+            place-items: center;
+            text-align: center;
+            padding: clamp(12px, 2.8vmin, 32px);
+        }
+
+            /* Small concentric indicator at top of the inner disc */
+            .inner .indicator {
+                position: absolute;
+                top: 8%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                background: radial-gradient(circle, var(--coral) 32%, transparent 33% 100%);
+                box-shadow: 0 0 0 6px rgba(20,20,18,.9), 0 8px 16px rgba(0,0,0,.25);
+                animation: pulse 2.6s ease-in-out infinite;
+            }
+
+        /* Message & button inside disc */
+        .message {
+            max-width: 420px;
+            color: #1a1a1a;
+            font-size: clamp(.95rem, 1.6vmin, 1.05rem);
+        }
+
+            .message .title {
+                font-weight: 600;
+                margin-bottom: .35rem;
+            }
+
+            .message .sub {
+                opacity: .8;
+                font-size: .95em;
+                margin-bottom: 1rem;
+            }
+
+        /* Bootstrap button enhanced with ripple & glow */
+        .btn-cream-dark {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #111;
+            --bs-btn-border-color: #111;
+            --bs-btn-hover-bg: #222;
+            --bs-btn-hover-border-color: #222;
+            --bs-btn-focus-shadow-rgb: 13,110,253;
+            border-radius: 999px;
+            padding: .65rem 1.25rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .btn-cream-dark::after {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: inherit;
+                box-shadow: 0 0 0 0 rgba(255,255,255,0.8);
+                animation: glow 3.5s ease-in-out infinite;
+                pointer-events: none;
+            }
+
+            .btn-cream-dark .bi {
+                margin-right: .5rem;
+            }
+
+        /* Bouncing coral dot near the bottom */
+        .dot {
+            position: absolute;
+            left: 42%;
+            bottom: -2%;
+            width: var(--dot-size);
+            height: var(--dot-size);
+            border-radius: 50%;
+            background: var(--coral);
+            box-shadow: 0 8px 12px rgba(0,0,0,.25);
+
+    </style>
+</head>
+<body>
+
+    <!-- Minimal top navbar -->
+    <nav class="app-navbar navbar navbar-expand-lg py-2">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                #Login</a>
+                #Register</a>
+            </div>
+            #
+            <!-- small logo placeholder -->
+            <span class="rounded-circle d-inline-block" style="width:24px;height:24px;background:#111;"></span>
+            </a>
+            <div class="ms-auto"></div>
+        </div>
+    </nav>
+
+    <!-- 404 canvas -->
+    <section class="error-hero">
+        <div class="error-canvas">
+
+            <!-- Big digits -->
+            <span class="digit left">4</span>
+            <span class="digit right">4</span>
+
+            <!-- Dark rotating ring -->
+            <div class="ring"></div>
+
+            <!-- Cream inner disc with message & button -->
+            <div class="inner" role="group" aria-label="404 message">
+                <div class="indicator" aria-hidden="true"></div>
+
+                <div class="message">
+                    <div class="title">The page you are looking for doesn’t exist or has been moved.</div>
+                    <div class="sub">Error <strong>404</strong> — We couldn’t find the resource you requested.</div>
+                    /
+                    <i class="bi bi-house-door"></i>
+                    Back to Home
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bouncing dot -->
+            <div class="dot" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS (for proper button focus/hover) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZr2lE2oRz6P4lJYWvEjo2V0p5V8aOQ3fQ1rM"
+            {
+            const btn=e.target.closest(".btn-cream-dark");
+            if(!btn) return;
+            // remove existing ripple nodes
+            Array.from(btn.querySelectorAll(".ripple")).forEach(n=>
+ n.remove());
+
+      const rect = btn.getBoundingClientRect();
+      const ripple = document.createElement("span");
+      ripple.className = "ripple";
+      ripple.style.left = (e.clientX - rect.left - 60) + "px";
+      ripple.style.top  = (e.clientY - rect.top  - 60) + "px";
+      btn.appendChild(ripple);
+
+      // cleanup after animation
+      setTimeout(() => ripple.remove(), 700);
+    }, {passive:true});
+    </script>
+</body>
+</html>

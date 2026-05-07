@@ -1,0 +1,16 @@
+﻿/* Theme color used in login */
+
+/* Reuse your login button design */
+
+
+    .btn-login:hover {
+        background-color: #D2B089;
+        color: black;
+        font-weight: 500;
+    }
+
+/* Optional: card styling for consistency */
+.error-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+}

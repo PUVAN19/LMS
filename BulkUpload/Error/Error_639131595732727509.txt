@@ -1,0 +1,5 @@
+Row 3: Tax Percent must be 0 when Tax Check is disabled
+Row 4: Tax Percent is required and must be greater than 0 when Tax Check is enabled
+Row 5: Tax Percent must be 0 when Tax Check is disabled
+Row 6: Tax Percent is required and must be greater than 0 when Tax Check is enabled
+Row 7: Tax Percent must be 0 when Tax Check is disabled

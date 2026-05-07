@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Error>
+	<Message id="ERRLOG001">Please enter Student ID.</Message>
+	<Message id="ERRLOG002">Please enter a Password.</Message>
+	<Message id="ERRLOG003">Invalid Student ID or Password.</Message>
+	<Message id="ERRLOG004">Please enter Admin ID.</Message>
+	<Message id="ERRLOG005">Invalid Admin ID or Password.</Message>
+	<Message id="ERRLOG006">Your account has been locked. Please contact the administrator.</Message>
+	<Message id="ERRLOG007">Unauthorized login attempt.</Message>
+
+	<Message id="ERRCOM">No records found.</Message>
+
+	<!-- Login ID -->
+	<Message id="ERRUSR001">Please enter Login ID.</Message>
+	<Message id="ERRUSR002">Login ID must contain only letters and numbers. Special characters are not allowed.</Message>
+	<Message id="ERRUSR003">Login ID must be at least 5 characters long.</Message>
+
+	<!-- Employee Code -->
+	<Message id="ERRUSR004">Please enter Employee Code.</Message>
+	<Message id="ERRUSR005">Employee Code must contain only letters and numbers.</Message>
+
+	<!-- User Name -->
+	<Message id="ERRUSR006">Please enter User Name.</Message>
+	<Message id="ERRUSR007">User Name can only contain letters and spaces.</Message>
+
+	<!-- Gender -->
+	<Message id="ERRUSR008">Please select a Gender.</Message>
+
+	<!-- Email -->
+	<Message id="ERRUSR009">Please enter an Email address.</Message>
+	<Message id="ERRUSR010">Please enter a valid Email address (e.g., example@domain.com).</Message>
+
+	<!-- Alternate Email -->
+	<Message id="ERRUSR011">Please enter a valid Alternate Email address.</Message>
+
+	<!-- Phone Number -->
+	<Message id="ERRUSR012">Please enter a Phone Number.</Message>
+	<Message id="ERRUSR013">Phone Number must be exactly 10 digits.</Message>
+	<Message id="ERRUSR014">Phone Number must contain only numbers.</Message>
+
+	<!-- Alternate Phone -->
+	<Message id="ERRUSR015">Please enter a valid Alternate Phone Number.</Message>
+	<Message id="ERRUSR016">Alternate Phone Number must be exactly 10 digits.</Message>
+
+	<!-- Department -->
+	<Message id="ERRUSR017">Please select a Department from the list.</Message>
+
+	<!-- Designation -->
+	<Message id="ERRUSR018">Please enter a Designation.</Message>
+	<Message id="ERRUSRDS018">Designation can only contain letters and spaces.</Message>
+
+  <!-- Role Type -->
+	<Message id="ERRUSR019">Please select a Role Type.</Message>
+
+	<!-- Password -->
+	<Message id="ERRUSR020">Please enter a Password.</Message>
+	<Message id="ERRUSR021">Password must be at least 6 characters long.</Message>
+	<Message id="ERRUSR022">Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.</Message>
+
+	<!-- Active Status -->
+	<Message id="ERRUSR023">Please select the Active Status (checked or unchecked).</Message>
+
+	<!-- Duplicate Checks -->
+	<Message id="ERRUSR028">Login ID already exists.</Message>
+	<Message id="ERRUSR029">Employee Code already exists.</Message>
+	<Message id="ERRUSR030">Email address already exists.</Message>
+	<Message id="ERRUSR031">Alternate Email address already exists.</Message>
+	<Message id="ERRUSR032">Phone Number already exists.</Message>
+	<Message id="ERRUSR033">Alternate Phone Number already exists.</Message>
+
+	<!-- Success Messages -->
+	<Message id="SUCUSR001">User details saved successfully.</Message>
+	<Message id="SUCUSR002">User details updated successfully.</Message>
+	<Message id="SUCUSR003">User deleted successfully.</Message>
+
+	<!-- Action Errors -->
+	<Message id="ERRUSR025">Please select a record to edit.</Message>
+	<Message id="ERRUSR026">Please select a record to delete.</Message>
+	<Message id="ERRUSR027">No data found for the selected record.</Message>
+
+	<!-- Text Clear -->
+	<Message id="INFOUSR01">All fields have been cleared.</Message>
+
+  <!--Author Master Messages-->
+	<!-- Author Master -->
+	<Message id="ERRAM01">Author Name must contain only letters, spaces, and dots (no numbers or special characters).</Message>
+	<Message id="ERRAM02">Author ID not found.</Message>
+	<Message id="ERRAM03">Please enter the Author Name.</Message>
+	<Message id="ERRAM04">Author Name can only contain letters, spaces, dots, hyphens, and apostrophes.</Message>
+	<Message id="ERRAM05">Please select an Author Type.</Message>
+	<Message id="ERRAM06">Author Name already exists for this Author Type.</Message>
+	<Message id="ERRAM07">Invalid Author Type.</Message>
+
+	<Message id="SUSAM01">Author inserted successfully.</Message>
+	<Message id="SUSAM02">Author updated successfully.</Message>
+	<Message id="SUSAM03">Author deleted successfully.</Message>
+
+	<!-- Category Master -->
+	<Message id="SUSCM01">Category inserted successfully.</Message>
+	<Message id="SUSCM02">Category updated successfully.</Message>
+	<Message id="SUSCM03">Category deleted successfully.</Message>
+
+	<Message id="ERRCM01">Please enter Category Name.</Message>
+	<Message id="ERRCM02">Category Name can contain only letters, numbers, space,'-' symbols.</Message>
+	<Message id="ERRCM08">Category Name must be at least 3 characters.</Message>
+
+	<Message id="ERRCM07">Category name already exists.</Message>
+
+	<!-- Description -->
+	<Message id="ERRCM03">Please enter a Description.</Message>
+	<Message id="ERRCM04">Description must be at least 5 characters long.</Message>
+	<Message id="ERRCM05">Description cannot exceed 500 characters.</Message>
+	<Message id="ERRCM06">Description contains invalid characters.</Message>
+
+	<!-- Book Errors -->
+	<Message id="ERRBOOK01">Unable to save the book. Please try again.</Message>
+	<Message id="ERRBOOK02">Unable to update the book. Please try again.</Message>
+	<Message id="ERRBOOK03">Unable to delete the book. Please try again.</Message>
+	<Message id="ERRBOOK04">Book record not found.</Message>
+
+	<!-- ISBN -->
+	<Message id="BKM001">ISBN is required.</Message>
+	<Message id="BKM002">Invalid ISBN format. Enter a valid ISBN-10 or ISBN-13.</Message>
+	<Message id="BKM003">ISBN must be at least 10 characters long.</Message>
+	<Message id="BKM004">ISBN cannot exceed 13 characters.</Message>
+
+	<!-- Title -->
+	<Message id="BKM005">Book Title is required.</Message>
+	<Message id="BKM006">Invalid Book Title. Only letters, numbers, spaces, and basic punctuation are allowed.</Message>
+
+	<!-- Category -->
+	<Message id="BKM007">Please select a Category.</Message>
+
+	<!-- Author -->
+	<Message id="BKM008">Please select at least one Author.</Message>
+
+	<!-- Language -->
+	<Message id="BKM009">Please select a Book Language.</Message>
+
+	<!-- Publisher -->
+	<Message id="BKM010">Publisher Name is required.</Message>
+	<Message id="BKM011">Invalid Publisher Name. Only letters, numbers, spaces, and basic symbols (., -) are allowed.</Message>
+
+	<!-- Year -->
+	<Message id="BKM012">Published Year is required.</Message>
+	<Message id="BKM013">Published Year must be a 4-digit number.</Message>
+	<Message id="BKM014">Published Year cannot be in the future.</Message>
+	<Message id="BKM015">Published Year must be 1900 or later.</Message>
+
+	<!-- Edition -->
+	<Message id="BKM016">Invalid edition format (e.g., 1st, 2nd, 3rd, 4th)</Message>
+
+	<!-- Price -->
+	<Message id="BKM017">Invalid Price. Enter a numeric value greater than 0.</Message>
+
+	<!-- Copies -->
+	<Message id="BKM018">Please enter a valid number of copies.</Message>
+	<Message id="BKM020">Please enter a valid decimal price (up to 2 decimal places).</Message>
+	<Message id="BKM021">Tax percentage is required.</Message>
+	<Message id="BKM022">Please enter a valid tax percentage (1–100).</Message>
+	<Message id="BKM023">Invalid receipt file type.</Message>
+	<Message id="BKM024">Receipt file size must not exceed 2 MB.</Message>
+	<Message id="BKM025">Invalid eBook file type.</Message>
+	<Message id="BKM026">The maximum eBook file size is 10 MB.</Message>s
+	<Message id="BKM027">Failed to save the book.</Message>
+	<Message id="BKM028">File not found.</Message>
+	<Message id="BKM029">The file does not exist on the server.</Message>
+	<Message id="BKM030">Invalid Book ID.</Message>
+	<Message id="BKM031">Purchase saved successfully</Message>
+	<Message id="BKM032">Invalid Excel file.Please Upload Correct file</Message>
+	<Message id="BKM035">Please select a search option.</Message>
+	
+	<Message id="BKM036">Please enter a search value.</Message>
+	<Message id="BKM037">The category name must start with a letter and contain only valid characters.</Message>
+	<Message id="BKM038">The book title must start with a letter and contain only valid characters.</Message>
+	<Message id="BKM039">No data available for export.</Message>
+	
+	<Message id="BKM040">Please Upload Excel File</Message>
+	<Message id="BKM041">Invalid file format</Message>
+	<Message id="BKM042">File size exceeds limit</Message>
+	<Message id="BKM043">Uploaded Excel file is empty.</Message>
+	<Message id="BKM044">Invalid Excel format. Please download the sample file.</Message>
+	<Message id="BKM045">Validation failed. Please download the error file.</Message>
+	<Message id="BKM047">Bulk insert completed successfully.</Message>
+	<Message id="BKM046">Bulk insert failed. Please try again.</Message>
+
+	<Message id="BKM048">All purchases already have receipts. Delete one to upload new.</Message>
+	<Message id="BKM049">This purchase already has a receipt.</Message>
+	<Message id="BKM050">Please upload ZIP file.</Message>
+	<Message id="BKM051">Only ZIP file allowed.</Message>
+	<Message id="BKM052">ZIP must contain a Receipts folder.</Message>
+	<Message id="BKM053">Receipts folder is empty.</Message>
+	<Message id="BKM054">Validation failed. Please download the error file.</Message>
+	<Message id="BKM055">Receipts uploaded successfully.</Message>
+	<Message id="BKM056">Error file not found.</Message>
+	<Message id="BKM057">Duplicate book (Title + Edition + Authors) already exists</Message>
+
+	
+
+
+
+
+	<!-- System -->
+	<Message id="SYSBOOK01">A system error occurred. Please contact the administrator.</Message>
+	<Message id="SYSBOOK02">Database connection error.</Message>
+
+	<Message id="SUSBOOK01">Book added successfully.</Message>
+	<Message id="SUSBOOK02">Book updated successfully.</Message>
+	<Message id="SUSBOOK03">Book deleted successfully.</Message>
+
+	<Message id="WARBOOK01">ISBN already exists.</Message>
+
+	<!-- Book Issue -->
+	<Message id="ERRBI01">Student ID is required.</Message>
+	<Message id="ERRBI02">Invalid Student ID.</Message>
+	<Message id="ERRBI03">Student ID not found.</Message>
+	<Message id="ERRBI04">Staff ID is required.</Message>
+	<Message id="ERRBI05">Invalid Staff ID.</Message>
+	<Message id="ERRBI06">Staff ID not found.</Message>
+	<Message id="ERRBI07">Please select at least one Book</Message>
+	<Message id="ERRBI08">Invalid Issue Date.</Message>
+	<Message id="ERRBI09">Invalid Due Date.</Message>
+	<Message id="ERRBI10">Due Date must be later than the Issue Date.</Message>
+	<Message id="ERRBI11">Session expired. Please click Save again.</Message>
+	<Message id="ERRBI12">Failed to insert Book Issue.</Message>
+	<Message id="SUSBI01">Book Issued successfully.</Message>
+
+	<!-- Member -->
+	<Message id="ERRMEM01">Invalid issue or the book has already been returned.</Message>
+	<Message id="ERRMEM02">Renewal request already submitted.</Message>
+	<Message id="SUSMEM01">Renewal request submitted successfully.</Message>
+	<Message id="ERRMEM03">Please enter a valid number of days.</Message>
+	<Message id="ERRMEM04">Invalid book issue selected.</Message>
+
+	<!-- Renewal -->
+	<Message id="ERRRR01">Please select an approved Due Date.</Message>
+	<Message id="ERRRR02">Reject reason is required.</Message>
+	<Message id="SUSRR01">Renewal request approved successfully.</Message>
+	<Message id="SUSRR02">Renewal request rejected successfully.</Message>
+
+	<!-- Role -->
+	<Message id="ERRROLE001">Please enter the User Role.</Message>
+	<Message id="ERRROLE002">User Role must contain only letters and spaces.</Message>
+	<Message id="ERRROLE003">Please select Active Status (Yes or No).</Message>
+	<Message id="ERRROLE004">Role already exists.</Message>
+	<Message id="ERRROLE005">Unexpected response from the database.</Message>
+	<Message id="ERRROLE006">Error loading role details.</Message>
+	<Message id="ERRROLE007">Error updating role.</Message>
+	<Message id="ERRROLE008">Form cleared.</Message>
+	<Message id="ERRROLE009">Role deleted successfully.</Message>
+	<Message id="ERRROLE010">An unexpected error occurred.</Message>
+	<Message id="ERRROLE011">Role added successfully.</Message>
+	<Message id="ERRROLE012">Default page is required.</Message>
+	<Message id="ERRROLE013">Role updated successfully.</Message>
+	<Message id="ERRROLE014">Role not found.</Message>
+
+	<!-- Menu -->
+	<Message id="ERRMENU001">Menu Name is required.</Message>
+	<Message id="ERRMENU002">Invalid Menu Name. Only letters and spaces are allowed.</Message>
+	<Message id="ERRMENU003">Page Name is required.</Message>
+	<Message id="ERRMENU004">Invalid Page Name. Format must be: Example.aspx (no spaces allowed).</Message>
+	<Message id="ERRMENU005">Please select Active Status.</Message>
+	<Message id="ERRMENU006">Parent Menu is required when IsChildMenu is selected.</Message>
+
+	<Message id="ERRMENU011">Menu added successfully.</Message>
+	<Message id="ERRMENU012">Menu updated successfully.</Message>
+	<Message id="ERRMENU013">Menu deactivated successfully.</Message>
+
+	<Message id="ERRMENU014">Menu Name already exists.</Message>
+	<Message id="ERRMENU015">Menu not found.</Message>
+	<Message id="ERRMENU016">An unexpected error occurred.</Message>
+	<Message id="ERRMENU007">Form cleared.</Message>
+	<Message id="ERRMENU008">Please enter Page Name for Child Menu.</Message>
+	<Message id="ERRMENU023">Please select a Parent Menu.</Message>
+	<Message id="ERRMENU024">Page Name is required to set as Default Page.</Message>
+
+	<!-- Search -->
+	<Message id="ERRMENU017">Please select Search By.</Message>
+	<Message id="ERRMENU018">Invalid Menu Name format (no special characters allowed).</Message>
+	<Message id="ERRMENU019">Invalid Page Name format (no special characters allowed).</Message>
+	<Message id="ERRMENU020">Search cleared.</Message>
+	<Message id="ERRMENU021">Please enter a Search Value.</Message>
+	<Message id="ERRMENU022">No record found.</Message>
+
+	<!-- Role Menu Mapping -->
+	<Message id="ERRRRMM001">Please select a Role.</Message>
+	<Message id="ERRRRMM003">Role menu mapping saved successfully.</Message>
+	<Message id="ERRRRMM004">Form cleared.</Message>
+	<Message id="ERRRRMM005">Role menu updated successfully.</Message>
+
+	<!-- Book Dues -->
+	<Message id="ERRBD001">Please enter a valid Member ID.</Message>
+	<Message id="ERRBD002">No records found.</Message>
+	<Message id="ERRBD003">Selected books marked as returned.</Message>
+	<Message id="ERRBD004">Selected books renewed.</Message>
+	<Message id="ERRBD005">Please select a valid renewal date.</Message>
+	<Message id="ERRBD006">Error during operation.</Message>
+	<Message id="ERRBD007">Please select a Member Type.</Message>
+	<Message id="ERRBD008">Please select books to process.</Message>
+	<Message id="ERRBD009">Please select a valid Return Date.</Message>
+	<Message id="ERRBD0010">Return Date cannot be earlier than the Issue Date.</Message>
+	<Message id="ERRBD0011">Return Date cannot be in the future.</Message>
+	<Message id="ERRBD0012">Please select at least one book.</Message>
+	<Message id="ERRBD0013">Books marked as returned successfully.</Message>
+	<Message id="ERRBD0014">Please select a valid renewal date.</Message>
+	<Message id="ERRBD0015">Renewal date cannot be earlier than today.</Message>
+	<Message id="ERRBD0016">Renewal date must be after the current Due Date.</Message>
+	<Message id="ERRBD0017">Books renewed successfully.</Message>
+	<Message id="ERRBD0018">Invalid ID. Please enter the correct ID.</Message>
+	<Message id="ERRBD0019">General error.</Message>
+
+	<!-- Book Availability -->
+	<Message id="ERRBA0001">Please select at least one Category.</Message>
+	<Message id="ERRBA0002">Please select a Search By option.</Message>
+	<Message id="ERRBA0003">Please enter a Search Value.</Message>
+	<Message id="ERRBA0004">Search Value must be at least 2 characters long.</Message>
+
+	<Message id="ERRBA0005">Error occurred while loading book availability.</Message>
+	<Message id="ERRBA0006">Error occurred while searching books.</Message>
+
+	<Message id="ERRBA0007">No records found.</Message>
+	<Message id="ERRBA0008">No books available for the selected Category.</Message>
+	<Message id="ERRBA0009">No data available to download.</Message>
+
+	<Message id="ERRBA0010">Books loaded successfully.</Message>
+	<Message id="ERRBA0011">Book availability exported successfully.</Message>
+</Error>

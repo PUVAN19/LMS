@@ -1,0 +1,44 @@
+﻿/* SUCCESS (Green) */
+.toast-success {
+    background-color: #51A351 !important; /* green */
+    color: #fff !important;
+}
+
+/* ERROR (Red) */
+.toast-error {
+    background-color: #BD362F !important; /* red */
+    color: #fff !important;
+}
+
+/* INFO (Blue) */
+.toast-info {
+    background-color: #2F96B4 !important; /* blue */
+    color: #fff !important;
+}
+
+/* WARNING (Orange) */
+.toast-warning {
+    background-color: #F89406 !important; /* orange */
+    color: #fff !important;
+}
+
+/* Common Toast Text */
+.toast-title {
+    font-weight: bold;
+    color: #fff !important;
+}
+
+
+
+/* Toast Box Styling */
+.toast {
+    opacity: 0.95 !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    padding: 12px 15px !important;
+    font-size: 15px !important;
+}
+
+/* Toast Progress Bar */
+
+

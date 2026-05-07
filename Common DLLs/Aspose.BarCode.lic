@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<License>
+  <Data>
+    <LicensedTo>STRATO SOLUTIONS LLC</LicensedTo>
+    <DevelopersNote>Limited to 1 developer.</DevelopersNote>
+    <OemNote>This is a redistributable license.</OemNote>
+    <Products>
+      <Product>Aspose.BarCode</Product>
+    </Products>
+    <EditionType>Enterprise</EditionType>
+    <SerialNumber>c3e99436-45bb-4dbf-9b46-92b0056c9159</SerialNumber>
+    <SubscriptionExpiry>20060915</SubscriptionExpiry>
+    <OemPublicKeyToken>716fcc553a201e56</OemPublicKeyToken>
+    <LicenseVersion>2.0</LicenseVersion>
+  </Data>
+  <Signature>z/8Ze+8nRAx+dlR7I4O13bDlPurVw/fwQnqxIweik4BLJFVnLbABRsjvSxbZZbPzVixr7DIXu4HqihDXOG/mWoCFyAV3QNFzEDVmdM4IugnoMiIW7CvLxlDB6pks2EK2w0ztpJMPDfAwD/uJX/xiPF8q3sdg1ZPGGadgSWyyxrI=</Signature>
+</License>

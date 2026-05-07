@@ -1,0 +1,38 @@
+﻿.custom-multiselect {
+    width: 300px;
+    position: relative;
+    font-family: Arial;
+}
+
+    .custom-multiselect .search-input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .custom-multiselect .dropdown-list {
+        border: 1px solid #ccc;
+        border-top: none;
+        max-height: 180px;
+        overflow-y: auto;
+        display: none;
+        background: white;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .custom-multiselect.active .dropdown-list {
+        display: block;
+    }
+
+    .custom-multiselect .dropdown-list label {
+        display: block;
+        padding: 6px 10px;
+        cursor: pointer;
+    }
+
+        .custom-multiselect .dropdown-list label:hover {
+            background: #f1f1f1;
+        }
